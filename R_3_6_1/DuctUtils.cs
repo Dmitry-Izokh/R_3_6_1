@@ -16,7 +16,7 @@ namespace R_3_6_1
         {
             UIApplication uiapp = commandData.Application;
             UIDocument uidoc = uiapp.ActiveUIDocument;
-            Document doc = uidoc.Document;
+            Autodesk.Revit.DB.Document doc = uidoc.Document;
 
             List<DuctType> ductTypes = new FilteredElementCollector(doc)
             .OfClass(typeof(DuctType))
@@ -30,7 +30,7 @@ namespace R_3_6_1
         {
             UIApplication uiapp = commandData.Application;
             UIDocument uidoc = uiapp.ActiveUIDocument;
-            Document doc = uidoc.Document;
+            Autodesk.Revit.DB.Document doc = uidoc.Document;
 
             List<MechanicalSystemType> systemTypes = new FilteredElementCollector(doc)
             .OfClass(typeof(MechanicalSystemType))
